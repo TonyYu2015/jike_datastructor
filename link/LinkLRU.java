@@ -7,13 +7,13 @@ public class LinkLRU {
   public LinkLRU() {
       list = new Node();
   }
+  // 双向链表节点
   class Node {
       public Node(String data, Node prev, Node next) {
           this.next = next;
           this.prev = prev;
           this.data = data;
       }
-      
       public Node() {
       }
       Node next;
